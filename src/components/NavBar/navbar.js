@@ -16,7 +16,7 @@ export default function Navbar() {
           to="intro"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-100}
           duration={500}
           className="desktopMenuListItem"
         >

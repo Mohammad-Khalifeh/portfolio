@@ -4,8 +4,20 @@ import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Form validation
+    const formData = new FormData(form.current);
+    const from_name = formData.get('from_name');
+    const your_email = formData.get('your_email');
+    const message = formData.get('message');
+
+    if (!from_name || !your_email || !message) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -18,13 +30,14 @@ export default function Contact() {
         (result) => {
           console.log(result.text);
           e.target.reset();
-          alert('Email send successfully');
+          alert('Email sent successfully');
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <section className="contactPage">
       <div id="contact">

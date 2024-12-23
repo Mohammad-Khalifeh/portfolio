@@ -10,10 +10,15 @@
   justify-content: center;
 }
 
+.contactPageTitle {
+  color: #1ab6c3;
+}
+
 .contactDesc {
   padding: 1rem;
   font-size: medium;
   font-weight: 300;
+  color: rgb(111, 119, 130);
 }
 
 .contactForm {
@@ -34,16 +39,22 @@
   max-width: 40rem;
   margin: 0.5rem;
   padding: 0.5rem 1rem;
-  color: white;
-  border: none;
+  color: rgb(111, 119, 130);
+  border: 1px solid #1ab6c3;
   border-radius: 0.5rem;
-  background: rgb(40, 40, 40);
+  /* background: rgb(40, 40, 40); */
 }
 
 .submitBtn {
-  background: white;
+  background: #1ab6c3;
+  color: white;
   border: none;
   border-radius: 0.5rem;
   margin: 0.5rem;
   padding: 0.75rem 3.5rem;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #0e5e6c;
 }

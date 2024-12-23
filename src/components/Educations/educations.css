@@ -12,6 +12,7 @@
 .educationTitle {
   font-size: 3rem;
   margin: 1rem 0;
+  color: #1ab6c3;
 }
 
 .instituteLogo {
@@ -27,6 +28,7 @@
 .educationDesc2,
 .educationDesc3 {
   margin: 3.5rem 0;
+  color: #0e5e6c;
 }
 
 .educationDetails h3 {

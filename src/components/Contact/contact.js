@@ -39,8 +39,8 @@ export default function Contact() {
   };
 
   return (
-    <section className="contactPage">
-      <div id="contact">
+    <section className="contactPage" id="contact">
+      <div>
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc">
           Please fill out the form below to discuss any work opportunities.

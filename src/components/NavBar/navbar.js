@@ -83,7 +83,7 @@ export default function Navbar() {
         className="desktopMenuBtn"
         onClick={() => {
           const element = document.getElementById('contact');
-          const offset = -50; // Define the offset
+          const offset = -80; // Define the offset
           const top =
             element.getBoundingClientRect().top + window.pageYOffset + offset;
 
@@ -109,7 +109,7 @@ export default function Navbar() {
           to="intro"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-100}
           duration={500}
           className="listItem"
           onClick={() => setShowNenu(false)}
@@ -169,7 +169,7 @@ export default function Navbar() {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-80}
           duration={500}
           className="listItem"
           onClick={() => setShowNenu(false)}

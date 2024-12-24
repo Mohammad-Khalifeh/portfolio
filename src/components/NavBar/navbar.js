@@ -68,12 +68,29 @@ export default function Navbar() {
         </Link>
         {/* <Link className="desktopMenuListItem">Clients</Link> */}
       </div>
-      <button
+      {/* <button
         className="desktopMenuBtn"
         onClick={() => {
           document
             .getElementById('contact')
             .scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <img className="desktopMenuImg" src={contactImg} alt=""></img>
+        Contact Me
+      </button> */}
+      <button
+        className="desktopMenuBtn"
+        onClick={() => {
+          const element = document.getElementById('contact');
+          const offset = -50; // Define the offset
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset + offset;
+
+          window.scrollTo({
+            top,
+            behavior: 'smooth',
+          });
         }}
       >
         <img className="desktopMenuImg" src={contactImg} alt=""></img>

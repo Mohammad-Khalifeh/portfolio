@@ -11,7 +11,7 @@ export default function Intro() {
         <span className="introText">
           I am <span className="introName">Mohammad</span>
           <br />
-          Website Developer
+          Full Stack Developer
         </span>
         <p className="introPara">
           I'm a passionate and motivated IT fresh graduate with a <br /> strong

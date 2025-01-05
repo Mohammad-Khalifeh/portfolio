@@ -1,4 +1,4 @@
-#works {
+#projects {
   margin: 0 auto;
   min-height: calc(100vh - 4rem);
   width: 100vw;
@@ -11,21 +11,21 @@
   padding: 0 1rem;
 }
 
-.worksTitle {
+.projectsTitle {
   margin: 1rem 0;
   font-size: 3rem;
   color: #1ab6c3;
 }
 
-.worksDesc {
-  font-weight: 400;
-  font-size: 1rem;
-  max-width: 45rem;
-  margin-bottom: 15px;
-  color: rgb(111, 119, 130);
-}
+/* .projectsDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 45rem;
+    margin-bottom: 15px;
+    color: rgb(111, 119, 130);
+  } */
 
-.worksImgs {
+.projectsImgs {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,15 +34,15 @@
   max-width: 65rem;
 }
 
-.worksImg {
+.projectsImg {
   overflow: hidden;
   height: 20rem;
-  width: 20rem;
-  margin: 1.5rem;
+  width: 16rem;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
-.worksBtn {
+.projectsBtn {
   margin: 3rem 0;
   padding: 0.5rem 2.5rem;
   border: none;
@@ -52,7 +52,7 @@
 }
 
 @media screen and (max-width: 585px) {
-  .worksImg {
+  .projectsImg {
     height: 48vw;
     width: 44vw;
   }

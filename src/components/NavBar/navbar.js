@@ -66,6 +66,17 @@ export default function Navbar() {
         >
           Portfolio
         </Link>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Project
+        </Link>
         {/* <Link className="desktopMenuListItem">Clients</Link> */}
       </div>
       {/* <button
@@ -163,6 +174,18 @@ export default function Navbar() {
           onClick={() => setShowNenu(false)}
         >
           Portfolio
+        </Link>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="listItem"
+          onClick={() => setShowNenu(false)}
+        >
+          Project
         </Link>
         <Link
           activeClass="active"

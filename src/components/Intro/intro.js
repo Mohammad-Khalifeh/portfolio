@@ -2,6 +2,7 @@ import React from 'react';
 import './intro.css';
 import btnImg from '../../assets/hireme.png';
 import { Link as ScrollLink } from 'react-scroll';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Intro() {
   return (
@@ -22,6 +23,24 @@ export default function Intro() {
             <img src={btnImg} alt="Hire" className="btnImg"></img> Hire Me
           </button>
         </ScrollLink>
+        <div className="links">
+          <a
+            href="https://www.linkedin.com/in/mohammadkhalifeh2025/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedinLink"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/Mohammad-Khalifeh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="gitHubLink"
+          >
+            <FaGithub />
+          </a>
+        </div>
       </div>
     </section>
   );

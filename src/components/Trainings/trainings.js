@@ -5,6 +5,7 @@ export default function Trainings() {
   return (
     <section id="trainings">
       <div className="trainingTitle">Training</div>
+
       <div className="trainingDesc1">
         <h3>
           <span>Supervisor : </span> Mohammad Jezeineh

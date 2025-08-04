@@ -1,7 +1,7 @@
 import React from 'react';
 import './intro.css';
-import btnImg from '../../assets/hireme.png';
-import { Link as ScrollLink } from 'react-scroll';
+// import btnImg from '../../assets/hireme.png';
+// import { Link as ScrollLink } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Intro() {
@@ -10,19 +10,19 @@ export default function Intro() {
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
-          I am <span className="introName">Mohammad</span>
+          I am <span className="introName">Mohammad Khalifeh</span>
           <br />
           Website Developer
         </span>
         <p className="introPara">
-          I'm a passionate and motivated IT fresh graduate with a <br /> strong
-          foundation in web development.
+          I'm a passionate and motivated IT with a{/* <br />  */}
+          strong foundation in web development.
         </p>
-        <ScrollLink to="contact" smooth={true} duration={500}>
+        {/* <ScrollLink to="contact" smooth={true} duration={500}>
           <button className="btn">
             <img src={btnImg} alt="Hire" className="btnImg"></img> Hire Me
           </button>
-        </ScrollLink>
+        </ScrollLink> */}
         <div className="links">
           <a
             href="https://www.linkedin.com/in/mohammadkhalifeh2025/"

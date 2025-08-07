@@ -5,6 +5,7 @@ import portfolio2 from '../../assets/portfolio-2.png';
 import portfolio3 from '../../assets/portfolio-3.png';
 import portfolio4 from '../../assets/portfolio-4.png';
 import portfolio5 from '../../assets/portfolio-5.png';
+import portfolio6 from '../../assets/portfolio-6.png';
 
 export default function projects() {
   const openSiteInNewTab = (url) => {
@@ -53,6 +54,14 @@ export default function projects() {
           className="projectsImg"
           onClick={() =>
             openSiteInNewTab('https://khalifeh-specific-list.netlify.app/')
+          }
+        />
+        <img
+          src={portfolio6}
+          alt=""
+          className="projectsImg"
+          onClick={() =>
+            openSiteInNewTab('https://khalifeh-todolist.netlify.app/')
           }
         />
       </div>

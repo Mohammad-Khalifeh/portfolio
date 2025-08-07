@@ -60,8 +60,8 @@ export default function Works() {
                 align-items: center;
               }
               img {
-                width: 20rem;
-                height: 20rem;
+                width: 60rem;
+                height: 40rem;
                 margin: 10px;
                 border: 2px solid #ddd;
                 border-radius: 8px;
@@ -135,8 +135,8 @@ export default function Works() {
                 align-items: center;
               }
               img {
-                width: 20rem;
-                height: 20rem;
+                width: 60rem;
+                height: 40rem;
                 margin: 10px;
                 border: 2px solid #ddd;
                 border-radius: 8px;
@@ -210,8 +210,8 @@ export default function Works() {
                 align-items: center;
               }
               img {
-                width: 20rem;
-                height: 20rem;
+                width: 60rem;
+                height: 40rem;
                 margin: 10px;
                 border: 2px solid #ddd;
                 border-radius: 8px;

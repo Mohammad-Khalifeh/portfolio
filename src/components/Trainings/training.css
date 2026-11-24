@@ -1,33 +1,124 @@
 #trainings {
+  width: 100%;
+  max-width: 72rem;
   margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* ---------- Title ---------- */
+.training__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #1ab6c3;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* ---------- Grid ---------- */
+.training__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* ---------- Card ---------- */
+.training__card {
+  background: #ffffff;
+  border: 1px solid #e6eaef;
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(14, 94, 108, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.training__card:hover {
+  transform: translateY(-6px);
+  border-color: #1ab6c3;
+  box-shadow: 0 10px 24px rgba(26, 182, 195, 0.18);
+}
+
+/* ---------- Card header ---------- */
+.training__card-header {
+  border-bottom: 1px solid #eef2f5;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.training__period {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0e5e6c;
+  margin: 0 0 0.25rem;
+}
+
+.training__place {
+  font-size: 0.95rem;
+  color: #6f7782;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ---------- Details ---------- */
+.training__details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+}
+
+.training__details li {
+  font-size: 1rem;
+  color: #444c56;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.training__label {
+  font-weight: 600;
+  color: #0e5e6c;
+  margin-right: 0.35rem;
+}
+
+/* ---------- Topics ---------- */
+.training__topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100vw;
-  max-width: 65rem;
+  gap: 0.35rem;
 }
 
-.trainingTitle {
-  font-size: 3rem;
-  margin: 1.5rem 0;
-  color: #1ab6c3;
+.training__topics li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  color: #55606c;
+  line-height: 1.45;
 }
 
-h3 {
-  margin-bottom: 20px;
-  /* color: #1ab6c3; */
-  color: rgb(111, 119, 130);
+.training__topics li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1ab6c3;
 }
 
-span {
-  color: #0e5e6c;
-}
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  #trainings {
+    padding: 2rem 1rem;
+  }
 
-.trainingDesc1,
-.trainingDesc2,
-.trainingDesc3 {
-  margin: 3.5rem 0;
-  /* background-color: #1ab6c3; */
+  .training__card {
+    padding: 1.25rem 1.1rem;
+  }
 }

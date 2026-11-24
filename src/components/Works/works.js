@@ -1,4 +1,3 @@
-import React from 'react';
 import './works.css';
 import home from '../../assets/amaz/home.png';
 import signin from '../../assets/amaz/signin.PNG';
@@ -32,6 +31,23 @@ import cash7 from '../../assets/cash/cash7.PNG';
 import cash8 from '../../assets/cash/cash8.PNG';
 import cash9 from '../../assets/cash/cash9.PNG';
 import cash10 from '../../assets/cash/cash10.PNG';
+import shop1 from '../../assets/shop/shop1.PNG';
+import shop2 from '../../assets/shop/shop2.PNG';
+import shop3 from '../../assets/shop/shop3.PNG';
+import shop4 from '../../assets/shop/shop4.PNG';
+import shop5 from '../../assets/shop/shop5.PNG';
+import shop6 from '../../assets/shop/shop6.PNG';
+import shop7 from '../../assets/shop/shop7.PNG';
+import shop8 from '../../assets/shop/shop8.PNG';
+import shop9 from '../../assets/shop/shop9.PNG';
+import shop10 from '../../assets/shop/shop10.PNG';
+import shop11 from '../../assets/shop/shop11.PNG';
+import shop12 from '../../assets/shop/shop12.PNG';
+import shop13 from '../../assets/shop/shop13.PNG';
+import shop14 from '../../assets/shop/shop14.PNG';
+import shop15 from '../../assets/shop/shop15.PNG';
+import shop16 from '../../assets/shop/shop16.PNG';
+import shop17 from '../../assets/shop/shop17.PNG';
 
 export default function Works() {
   const openNewTabAmazona = () => {
@@ -242,16 +258,100 @@ export default function Works() {
             backend operations.
           </div>
             <div class="cashImage">
+            <img src="${cash1}" alt="Sign In Image" />
               <img src="${cash9}" alt="Home Image" />
-              <img src="${cash1}" alt="Home Image" />
-              <img src="${cash2}" alt="Home Image" />
-              <img src="${cash3}" alt="Home Image" />
-              <img src="${cash4}" alt="Home Image" />
-              <img src="${cash5}" alt="Home Image" />
-              <img src="${cash6}" alt="Home Image" />
-              <img src="${cash7}" alt="Home Image" />
-              <img src="${cash8}" alt="Home Image" />
-              <img src="${cash10}" alt="Home Image" />
+              <img src="${cash2}" alt="Dashboard Image" />
+              <img src="${cash3}" alt="UserList Image" />
+              <img src="${cash4}" alt="CategoryList Image" />
+              <img src="${cash5}" alt="ProductList Image" />
+              <img src="${cash10}" alt="OrderList Image" />
+              <img src="${cash6}" alt="Inventory Image" />
+              <img src="${cash7}" alt="Stock Image" />
+              <img src="${cash8}" alt="Profile Image" />
+            </div>
+          </body>
+        </html>
+      `);
+    }
+  };
+
+  const openNewTabQR = () => {
+    const newWindow = window.open('', '_blank');
+    if (newWindow) {
+      // Set the content of the new tab
+      newWindow.document.write(`
+        <html>
+          <head>
+            <title>QR Code Images</title>
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 20px;
+                background-color: #f5f5f5;
+              }
+              .QRImage {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+              }
+              img {
+                width: 60rem;
+                height: 40rem;
+                margin: 10px;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              }
+              img:hover {
+                transform: scale(1.05);
+                transition: transform 0.2s ease-in-out;
+              }
+              .QRParag {
+                margin-top: 20px;
+                padding: 30px 10rem;
+                font-size: 1.2rem;
+                text-align: center;
+                line-height: 1.6;
+                color: rgb(111, 119, 130);;
+              }
+            </style>
+          </head>
+          <body>
+          <div class="QRParag">
+            The QR code ordering system for a coffee shop is a modern, contactless solution designed to 
+            enhance the customer experience and streamline service. By simply scanning a QR code, customers 
+            are directed to a user-friendly home page where they can instantly select their table number and
+            browse the full menu to place orders directly from their devices. This seamless integration 
+            eliminates the need for waiting in line, allowing guests to customize their beverages and food 
+            at their own pace. The system effectively reduces wait times, minimizes order errors, and 
+            optimizes staff workflow, ensuring a smooth and efficient operation that caters to the 
+            fast-paced environment of a coffee shop while offering a convenient, digital-first experience 
+            for patrons.
+          </div>
+            <div class="QRImage">
+              <img src="${shop1}" alt="QR Code Image" />
+              <img src="${shop2}" alt="QR Code Image" />
+              <img src="${shop3}" alt="QR Code Image" />
+              <img src="${shop4}" alt="QR Code Image" />
+              <img src="${shop5}" alt="QR Code Image" />
+              <img src="${shop6}" alt="QR Code Image" />
+              <img src="${shop7}" alt="QR Code Image" />
+              <img src="${shop8}" alt="QR Code Image" />
+              <img src="${shop9}" alt="QR Code Image" />
+              <img src="${shop10}" alt="QR Code Image" />
+              <img src="${shop11}" alt="QR Code Image" />
+              <img src="${shop12}" alt="QR Code Image" />
+              <img src="${shop13}" alt="QR Code Image" />
+              <img src="${shop14}" alt="QR Code Image" />
+              <img src="${shop15}" alt="QR Code Image" />
+              <img src="${shop16}" alt="QR Code Image" />
+              <img src="${shop17}" alt="QR Code Image" />
             </div>
           </body>
         </html>
@@ -286,6 +386,12 @@ export default function Works() {
           alt="Home"
           className="worksImg"
           onClick={openNewTabCash}
+        />
+        <img
+          src={shop1}
+          alt="Home"
+          className="worksImg"
+          onClick={openNewTabQR}
         />
       </div>
     </section>
